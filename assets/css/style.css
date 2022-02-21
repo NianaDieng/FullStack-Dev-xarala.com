@@ -4,7 +4,7 @@ body{
 }
 .container{
     width: 1170px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 .header .navbar .menu{
     float: right;
@@ -43,28 +43,55 @@ body{
 }
 .header .home
 {
-    text-align: center;
-    color: black;
-    margin-top: 205px;
-    background-color: rgb(252, 203, 150);
+   
+    display: flex;
+    margin: 20px;
+     width: 100%; 
 }
- .header .home h1{
+.home .paragraphe{
+  margin-top: 200px;
+  margin-left: 40px;
+}
+.image-ronde-bg{
+  background-size: contain;
+ background-position: 50% 50%;
+ background-image: url(../img/logo.jpg); 
+ display: flex;
+ margin-left: 20%;
+ width: 300px ;
+ height: 300px;
+ border: none;
+  -moz-border-raduis: 15px;
+ -webkit-border-raduis:85px;
+ border-radius: 85px; 
+ 
+}
+ /* .header .home h1{
   color: rgb(252, 203, 150);
-  text-align: center;
-} 
+  
+}  */
 .header .home h2{
   font-family: 'Droid serif',sans-serif;
   font-size: 20px;
+  text-align: center;
   font-weight: 100;
   font-style: italic;
+  color: rgb(141, 86, 27);
+  margin-left: 500px;
+  /* margin-top: 200px; */
   
 }
 .footer{
-  background-color: #FFFF;
+  background-color:rgb(141, 86, 27) ;
   margin: 0;
   display: flex;
   justify-content: center;
   margin-top: 100px;
+  height: 100px;
+}
+.footer p{
+  text-align: center;
+  margin-top: 50px;
 }
 .contacter{
   display: grid;
@@ -94,6 +121,9 @@ body{
   gap: 100px;
   
 }
+.contacter ul{
+  list-style: none;
+}
 .contacter ul li{
   color: rgb(141, 86, 27);
   font-size: 20px;
@@ -108,4 +138,43 @@ body{
 }
 #cordonne ul li{
 color: black;
+}
+button{
+  border-radius: 25px;
+  width: 150px;
+  height: 50px;
+  background-color: rgb(141, 86, 27);
+  color: #FFFF;
+  border: none;
+  margin-left: 50px;
+}
+/* input[type=text] {
+  border: 2px solid rgb(252, 203, 150) ;
+  border-radius: 10px;
+} */
+input[type=text], input[type=email] {
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 22px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+input:hover {
+  border: 1px solid #FFFF;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: brown;
+  color: white;
+}
+textarea {
+  width: 200px;
+  height: 50px;
+  padding: 12px 20px;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+  resize: none;
 }
